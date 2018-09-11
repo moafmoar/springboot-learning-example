@@ -1,0 +1,38 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: full
+  Date: 2018/1/17
+  Time: 15:35
+  To change this template use File | Settings | File Templates.
+--%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+<button type="button" id="btn" value="免费获取验证码" onclick="settime()" />
+<script type="text/javascript">
+    var countdown=60;
+    $(function () {
+        setInterval(function() {
+            settime()
+        },1000)
+    })
+
+    function settime() {
+        if (countdown == 0) {
+            $("#btn").prop("disabled",false);
+            //$("#btn").value="免费获取验证码";
+            countdown = 60;
+        } else {
+            $("#btn").prop("disabled", true);
+            $("#btn").text(countdown +"s");
+            countdown--;
+        }
+    }
+</script>
+</body>
+</html>

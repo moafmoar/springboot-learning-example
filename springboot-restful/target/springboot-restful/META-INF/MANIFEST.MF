@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot-restful :: Spsringboot 实现 Restful
+  服务，基于 HTTP / JSON 传输 Demo
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: full
+Implementation-Vendor-Id: springboot
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.7.0_55
+Main-Class: ${start-class}
+
